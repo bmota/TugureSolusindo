@@ -15,9 +15,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tugure.Solusindo.Core\Tugure.Solusindo.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
   </ItemGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='net461'">
@@ -25,5 +22,8 @@
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
     <Reference Include="System.Transactions" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tugure.Solusindo.Core\Tugure.Solusindo.Core.csproj" />
   </ItemGroup>
 </Project>
