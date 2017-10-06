@@ -35,9 +35,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tugure.Solusindo.Web.Core\Tugure.Solusindo.Web.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="2.0.0" />
@@ -65,6 +62,9 @@
   <ItemGroup>
     <Folder Include="wwwroot\lib" />
     <Folder Include="wwwroot\metronic\assets\global\plugins\datatables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tugure.Solusindo.Web.Core\Tugure.Solusindo.Web.Core.csproj" />
   </ItemGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='net461'">
     <DefineConstants>FEATURE_LDAP;FEATURE_SIGNALR</DefineConstants>
